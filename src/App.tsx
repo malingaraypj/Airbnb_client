@@ -1,5 +1,17 @@
+import { createBrowserRouter, RouterProvider } from "react-router";
+import LandingPage from "./pages/LandingPage";
+import LandingNavbarWrapper from "./components/landing/LandingNavbarWrapper";
+
 function App() {
-  return <div className="bg-green-300">Hello world</div>;
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <LandingNavbarWrapper />,
+      children: [{ index: true, element: <LandingPage /> }],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

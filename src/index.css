@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:wght@100&display=swap");
+
+* {
+  font-family: "roboto", sans-serif;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
