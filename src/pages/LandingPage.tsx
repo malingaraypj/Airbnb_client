@@ -1,3 +1,9 @@
+import HomeComponent from "@/components/landing/home/HomeComponent";
+
 export default function LandingPage() {
-  return <div>Landing page</div>;
+  return (
+    <div className="w-full">
+      <HomeComponent />
+    </div>
+  );
 }
